@@ -1,0 +1,81 @@
+<article class="markdown-body"><h1>
+<a id="user-content-beziercurveto-方法" class="anchor" href="#beziercurveto-%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>bezierCurveTo() 方法</h1>
+
+<h3>
+<a id="user-content-定义和用法" class="anchor" href="#%E5%AE%9A%E4%B9%89%E5%92%8C%E7%94%A8%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>定义和用法</h3>
+
+<p>bezierCurveTo() 方法通过使用表示三次贝塞尔曲线的指定控制点，向当前路径添加一个点。
+提示：三次贝塞尔曲线需要三个点。前两个点是用于三次贝塞尔计算中的控制点，第三个点是曲线的结束点。曲线的开始点是当前路径中最后一个点。如果路径不存在，那么请使用 beginPath() 和 moveTo() 方法来定义开始点。
+三次贝塞尔曲线
+开始点：moveTo(20,20)
+控制点 1：bezierCurveTo(20,100,200,100,200,20)
+控制点 2：bezierCurveTo(20,100,200,100,200,20)
+结束点：bezierCurveTo(20,100,200,100,200,20)
+提示：请查看 quadraticCurveTo() 方法。它有一个控制点，而不是两个。</p>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认值：</td>
+<td>0</td>
+</tr>
+<tr>
+<td>JavaScript 语法：</td>
+<td>context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y);</td>
+</tr>
+</tbody>
+</table>
+
+<p>属性值</p>
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cp1x</td>
+<td>第一个贝塞尔控制点的 x 坐标</td>
+</tr>
+<tr>
+<td>cp1y</td>
+<td>第一个贝塞尔控制点的 y 坐标</td>
+</tr>
+<tr>
+<td>cp2x</td>
+<td>第二个贝塞尔控制点的 x 坐标</td>
+</tr>
+<tr>
+<td>cp2y</td>
+<td>第二个贝塞尔控制点的 y 坐标</td>
+</tr>
+<tr>
+<td>x</td>
+<td>结束点的 x 坐标</td>
+</tr>
+<tr>
+<td>y</td>
+<td>结束点的 y 坐标</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.bezierCurveTo(20,100,200,100,200,20);
+ctx.stroke();
+
+</code></pre>
+</article>

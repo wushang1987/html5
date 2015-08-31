@@ -1,0 +1,40 @@
+<article class="markdown-body"><h1 id="fillstyle"><a name="user-content-fillstyle" href="#fillstyle" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>fillStyle</h1>
+<h3 id="ddd"><a name="user-content-ddd" href="#ddd" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法ddd</h3>
+<p>fillStyle 属性设置或返回用于填充绘画的颜色、渐变或模式。</p>
+<p><em>属性值</em></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>指示绘图填充色的 CSS 颜色值。默认值是 #000000。</td>
+</tr>
+<tr>
+<td>gradient</td>
+<td>用于填充绘图的渐变对象（线性或放射性）</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>用于填充绘图的 pattern 对象</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>浏览器支持</em><br />
+大部分浏览器支持</p>
+<hr />
+<p>练习</p>
+<pre><code>var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+var my_gradient=ctx.createLinearGradient(0,0,0,170);
+my_gradient.addColorStop(0,&quot;black&quot;);
+my_gradient.addColorStop(1,&quot;white&quot;);
+ctx.fillStyle=my_gradient;
+ctx.fillRect(20,20,150,100);
+
+</code></pre></article>

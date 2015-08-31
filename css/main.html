@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0275)https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/aladdin/app/app.html?v=20141121&appurl=https%3A%2F%2Fss0.bdstatic.com%2F9_QWf8Sm1A5BphGlnYG%2Fstore%2Fstatic%2Fkvt%2F17470cd03187684d30673ed7e4f47425.swf&width=536px&height=402px&appname=%E5%B8%9D%E5%9B%BD%E4%BA%89%E9%9C%B8 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	
+	<title>main</title>
+</head>
+<body style="margin:0;padding:0">
+<style>
+	.op_app_div{position:relative}
+	.op-app_normal-loading {
+		left:0;
+		top:0;
+		position:absolute;
+		width:536px;
+		padding: 108px 10px;
+		text-align:center;
+		background-color:#fff;
+		font-size:13px;
+	}
+	</style>
+<div class="op_app_div">
+	<div class="op-app_normal-loading" id="onload" style="height: 402px; display: none;"><div><img src="./main_files/app-1.gif"></div>
+	<span id="op-app_normal-mv-name">帝国争霸</span>正在努力为您加载，请稍作等待…</div>
+	<div id="op_app_flashContent" class="op_app_swfBox"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="536px" height="402px" name="dn=45" id="op_app_swf"><param name="movie" value="https://ss0.bdstatic.com/9_QWf8Sm1A5BphGlnYG/store/static/kvt/17470cd03187684d30673ed7e4f47425.swf"><param name="FlashVars" value="dn=45&amp;js_fun=callbackJs&amp;autoStart=1"><param name="menu" value="false"><param name="wmode" value="opaque"><param name="allowfullscreen" value="false"><param name="allowscriptaccess" value="always"><embed id="op_app_swf_ff" flashvars="dn=45" src="https://ss0.bdstatic.com/9_QWf8Sm1A5BphGlnYG/store/static/kvt/17470cd03187684d30673ed7e4f47425.swf" quality="high" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="536px" height="402px" menu="false" allowfullscreen="false" allowscriptaccess="always" name="flashResult" wmode="opaque"></object></div>
+</div>
+	<script type="text/javascript">
+		var op_app_swfCanvas = document.getElementById("op_app_flashContent"),
+			op_app_swfCtrl,
+			op_app_dn = 45,
+			op_app_dbcity = location.search.substring(1).split("&"),
+			op_app_appurl,
+			op_app_height = "243px",
+			op_app_width = "536px",
+			op_app_name = "",
+			em;
+		for(var i = 0; i < op_app_dbcity.length; i++){
+			var keyVal = op_app_dbcity[i].split('=');
+			if(keyVal[0] === 'appurl'){
+				op_app_appurl = decodeURIComponent(keyVal[1]);
+			}
+			if(keyVal[0] === 'height'){
+				op_app_height = keyVal[1];
+			}
+			if(keyVal[0] === 'width'){
+				op_app_width = keyVal[1];
+			}
+			if(keyVal[0] === 'appname'){
+				op_app_name = decodeURIComponent(keyVal[1]);
+			}
+		}
+		document.getElementById("onload").style.height = op_app_height;
+		document.getElementById("op-app_normal-mv-name").innerHTML = op_app_name;
+		var swfVer = getSWFVersion();
+		function _aMC(o){
+			var t = o,i=-1;
+			while(t=t.parentNode){ 
+				i=parseInt(t.getAttribute('id')); 
+				if(i>0) return i;
+			} 
+		}
+		function getSWFVersion() {var n = navigator;if (n.plugins && n.mimeTypes.length) {var a = n.plugins["Shockwave Flash"];if (a && a.description) {return a.description.replace(/([a-zA-Z]|\s)+/, "").replace(/(\s)+r/, ".") + ".0";}} else if (window.ActiveXObject && !window.opera) {for (var i = 10; i >= 2; i--) {try {var c = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.' + i);if (c) {return i + ".0.0";break;}} catch(e) {}}}}
+		function creatFlashfunction(id, url, width, height, fq){
+			var str = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width=" + width + " height=" + height + " name='" + fq + "' id='" + id + "'>";str += "<param name='movie' value=" + url + ">";str += "<param name=FlashVars value=" + fq + "&js_fun=callbackJs&autoStart=1" + ">";str += "<param name='menu' value='false'>";str += "<param name='wmode' value='opaque'>";str += "<param name='allowfullscreen' value='false'>";str += "<param name='allowscriptaccess' value='always'>";str += "<embed id='" + id + "_ff' FlashVars='" + fq + "' src='" + url + "' quality='high' pluginspage='https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width=" + width + " height=" + height + " menu='false' allowfullscreen='false' allowscriptaccess='always' name='flashResult' wmode='opaque'/>";str += "</object>";op_app_swfCanvas.innerHTML = str;
+			var obj = document.getElementById('op_ticket_swf');
+			
+		}
+		
+		function getSWF(movieName) {var isIE = navigator.userAgent.indexOf('MSIE') != -1 && !window.opera;if (isIE) {return document[movieName] || window[movieName];} else {return document[movieName + "_ff"] || window[movieName + "_ff"];}}
+		if (swfVer == undefined || swfVer.split(".")[0] < 8) {
+			document.getElementById("onload").style.backgroundColor = '#666';
+			document.getElementById("onload").innerHTML = '<span style="color:#fff;font-size:18px">您还没有安装flash播放器,请点击<a style="color:#06a7e1;" target="_blank" href="http://www.adobe.com/go/getflash">这里</a>安装</span>'
+		} else {
+			op_app_swfCanvas.className = "op_app_swfBox";
+			creatFlashfunction("op_app_swf", op_app_appurl, op_app_width, op_app_height, "dn=" + op_app_dn);op_app_swfCtrl = getSWF("op_app_swf");
+			em = document.getElementById("op_app_swf_ff");
+			if(!em || window.attachEvent || window.document.documentMode == '11'){
+				window.onload=function(){
+					document.getElementById("onload").style.display="none";
+				};
+			}else{
+				var intervalTimer = setInterval(function(){
+					if(em && em.PercentLoaded && em.PercentLoaded() > 0){
+						document.getElementById("onload").style.display="none";
+						clearInterval(intervalTimer);
+					}
+				}, 50);
+			}
+		}
+		
+	</script>
+
+</body></html>

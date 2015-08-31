@@ -1,0 +1,54 @@
+<article class="markdown-body"><h1 id="createradialgradient"><a name="user-content-createradialgradient" href="#createradialgradient" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>createRadialGradient() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>createLinearGradient() 方法创建放射状/圆形渐变对象。<br />
+渐变可用于填充矩形、圆形、线条、文本等等。<br />
+提示：请使用该对象作为 strokeStyle 或 fillStyle 属性的值。<br />
+提示：请使用 addColorStop() 方法规定不同的颜色，以及在 gradient 对象中的何处定位颜色。</p>
+<p>参数值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x0</td>
+<td>渐变的开始圆的 x 坐标</td>
+</tr>
+<tr>
+<td>y0</td>
+<td>渐变的开始圆的 y 坐标</td>
+</tr>
+<tr>
+<td>r0</td>
+<td>开始圆的半径</td>
+</tr>
+<tr>
+<td>x1</td>
+<td>渐变的结束圆的 x 坐标</td>
+</tr>
+<tr>
+<td>y1</td>
+<td>渐变的结束圆的 y 坐标</td>
+</tr>
+<tr>
+<td>r1</td>
+<td>结束圆的半径</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+
+var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,&quot;red&quot;);
+grd.addColorStop(1,&quot;white&quot;);
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,100);
+
+</code></pre></article>

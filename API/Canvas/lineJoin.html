@@ -1,0 +1,41 @@
+<article class="markdown-body"><h1 id="linejoin"><a name="user-content-linejoin" href="#linejoin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>lineJoin 属性</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>lineJoin 属性设置或返回所创建边角的类型，当两条线交汇时。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>值</td>
+<td>描述</td>
+</tr>
+<tr>
+<td>bevel</td>
+<td>创建斜角。</td>
+</tr>
+<tr>
+<td>round</td>
+<td>创建圆角。</td>
+</tr>
+<tr>
+<td>miter</td>
+<td>默认。创建尖角。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.lineJoin=&quot;round&quot;;
+ctx.moveTo(20,20);
+ctx.lineTo(100,50);
+ctx.lineTo(20,100);
+ctx.stroke();
+
+
+</code></pre></article>

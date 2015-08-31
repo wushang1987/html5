@@ -1,0 +1,20 @@
+<article class="markdown-body"><h1 id="linecap"><a name="user-content-linecap" href="#linecap" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>lineCap 属性</h1>
+<h3 id="linecap_1"><a name="user-content-linecap_1" href="#linecap_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>lineCap 属性设置或返回线条末端线帽的样式。</h3>
+<p>注释：&rdquo;round&rdquo; 和 &ldquo;square&rdquo; 会使线条略微变长。</p>
+<p>属性值</p>
+<p>值   描述<br />
+|-----|-----|<br />
+|butt    |默认。向线条的每个末端添加平直的边缘。<br />
+|round   |向线条的每个末端添加圆形线帽。<br />
+|square  |向线条的每个末端添加正方形线帽。</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.lineCap=&quot;round&quot;;
+ctx.moveTo(20,20);
+ctx.lineTo(20,200);
+ctx.stroke();
+
+
+</code></pre></article>

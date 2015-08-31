@@ -1,0 +1,49 @@
+<article class="markdown-body"><h1 id="stroketext"><a name="user-content-stroketext" href="#stroketext" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>strokeText() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>strokeText() 方法在画布上绘制文本（没有填色）。文本的默认颜色是黑色。<br />
+提示：请使用 font 属性来定义字体和字号，并使用 strokeStyle 属性以另一种颜色/渐变来渲染文本。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>规定在画布上输出的文本。</td>
+</tr>
+<tr>
+<td>x</td>
+<td>开始绘制文本的 x 坐标位置（相对于画布）。</td>
+</tr>
+<tr>
+<td>y</td>
+<td>开始绘制文本的 y 坐标位置（相对于画布）。</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>可选。允许的最大文本宽度，以像素计。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+
+ctx.font=&quot;20px Georgia&quot;;
+ctx.strokeText(&quot;Hello World!&quot;,10,50);
+
+ctx.font=&quot;30px Verdana&quot;;
+// 创建渐变
+var gradient=ctx.createLinearGradient(0,0,c.width,0);
+gradient.addColorStop(&quot;0&quot;,&quot;magenta&quot;);
+gradient.addColorStop(&quot;0.5&quot;,&quot;blue&quot;);
+gradient.addColorStop(&quot;1.0&quot;,&quot;red&quot;);
+// 用渐变填色
+ctx.strokeStyle=gradient;
+ctx.strokeText(&quot;w3school.com.cn&quot;,10,90);
+
+
+</code></pre></article>

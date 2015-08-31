@@ -1,0 +1,19 @@
+<article class="markdown-body"><h1 id="clearrect"><a name="user-content-clearrect" href="#clearrect" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>clearRect() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>clearRect() 方法清空给定矩形内的指定像素。</p>
+<p>参数值</p>
+<p>参数  描述<br />
+|-----|----|<br />
+|x       |要清除的矩形左上角的 x 坐标<br />
+|y       |要清除的矩形左上角的 y 坐标<br />
+|width   |要清除的矩形的宽度，以像素计<br />
+|height  |要清除的矩形的高度，以像素计</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.fillStyle=&quot;red&quot;;
+ctx.fillRect(0,0,300,150);
+ctx.clearRect(20,20,100,50);
+
+
+</code></pre></article>

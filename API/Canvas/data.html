@@ -1,0 +1,25 @@
+<article class="markdown-body"><h1 id="data"><a name="user-content-data" href="#data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>data 属性</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>fillStyle 属性设置或返回用于填充绘画的颜色、渐变或模式。<br />
+data 属性返回一个对象，该对象包含指定的 ImageData 对象的图像数据。<br />
+对于 ImageData 对象中的每个像素，都存在着四方面的信息，即 RGBA 值：<br />
+R - 红色 (0-255)<br />
+G - 绿色 (0-255)<br />
+B - 蓝色 (0-255)<br />
+A - alpha 通道 (0-255; 0 是透明的，255 是完全可见的)<br />
+color/alpha 以数组形式存在，并存储于 ImageData 对象的 data 属性中。</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+var imgData=ctx.createImageData(100,100);
+for (var i=0;i&lt;imgData.data.length;i+=4)
+  {
+  imgData.data[i+0]=255;
+  imgData.data[i+1]=0;
+  imgData.data[i+2]=0;
+  imgData.data[i+3]=255;
+  }
+ctx.putImageData(imgData,10,10);
+
+
+</code></pre></article>

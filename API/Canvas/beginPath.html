@@ -1,0 +1,24 @@
+<article class="markdown-body"><h1 id="beginpath"><a name="user-content-beginpath" href="#beginpath" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>beginPath() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>beginPath() 方法开始一条路径，或重置当前的路径。<br />
+提示：请使用这些方法来创建路径：moveTo()、lineTo()、quadricCurveTo()、bezierCurveTo()、arcTo() 以及 arc()。<br />
+提示：请使用 stroke() 方法在画布上绘制确切的路径。</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+
+ctx.beginPath();
+ctx.lineWidth=&quot;5&quot;;
+ctx.strokeStyle=&quot;red&quot;; // 红色路径
+ctx.moveTo(0,75);
+ctx.lineTo(250,75);
+ctx.stroke(); // 进行绘制
+
+ctx.beginPath();
+ctx.strokeStyle=&quot;blue&quot;; // 蓝色路径
+ctx.moveTo(50,0);
+ctx.lineTo(150,130);
+ctx.stroke(); // 进行绘制
+
+
+</code></pre></article>

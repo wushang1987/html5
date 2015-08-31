@@ -1,0 +1,41 @@
+<article class="markdown-body"><h1 id="addcolorstop"><a name="user-content-addcolorstop" href="#addcolorstop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>addColorStop() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>addColorStop() 方法规定 gradient 对象中的颜色和位置。<br />
+addColorStop() 方法与 createLinearGradient() 或 createRadialGradient() 一起使用。<br />
+注释：您可以多次调用 addColorStop() 方法来改变渐变。如果您不对 gradient 对象使用该方法，那么渐变将不可见。为了获得可见的渐变，您需要创建至少一个色标。</p>
+<p>参数值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stop</td>
+<td>介于 0.0 与 1.0 之间的值，表示渐变中开始与结束之间的位置。</td>
+</tr>
+<tr>
+<td>color</td>
+<td>在结束位置显示的 CSS 颜色值</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+
+var grd=ctx.createLinearGradient(0,0,170,0);
+grd.addColorStop(0,&quot;black&quot;);
+grd.addColorStop(&quot;0.3&quot;,&quot;magenta&quot;);
+grd.addColorStop(&quot;0.5&quot;,&quot;blue&quot;);
+grd.addColorStop(&quot;0.6&quot;,&quot;green&quot;);
+grd.addColorStop(&quot;0.8&quot;,&quot;yellow&quot;);
+grd.addColorStop(1,&quot;red&quot;);
+
+ctx.fillStyle=grd;
+ctx.fillRect(20,20,150,100);
+
+
+</code></pre></article>

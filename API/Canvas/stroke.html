@@ -1,0 +1,16 @@
+<article class="markdown-body"><h1 id="stroke"><a name="user-content-stroke" href="#stroke" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>stroke() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>stroke() 方法会实际地绘制出通过 moveTo() 和 lineTo() 方法定义的路径。默认颜色是黑色。<br />
+提示：请使用 strokeStyle 属性来绘制另一种颜色/渐变。</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.lineTo(20,100);
+ctx.lineTo(70,100);
+ctx.strokeStyle=&quot;green&quot;;
+ctx.stroke();
+
+
+</code></pre></article>

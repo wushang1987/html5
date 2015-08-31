@@ -1,0 +1,31 @@
+<article class="markdown-body"><h1 id="translate"><a name="user-content-translate" href="#translate" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>translate() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>translate() 方法重新映射画布上的 (0,0) 位置。<br />
+注释：当您在 translate() 之后调用诸如 fillRect() 之类的方法时，值会添加到 x 和 y 坐标值上。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>添加到水平坐标（x）上的值</td>
+</tr>
+<tr>
+<td>y</td>
+<td>添加到垂直坐标（y）上的值</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.fillRect(10,10,100,50);
+ctx.translate(70,70);
+ctx.fillRect(10,10,100,50);
+
+
+</code></pre></article>

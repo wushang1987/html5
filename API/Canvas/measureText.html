@@ -1,0 +1,47 @@
+<article class="markdown-body"><h1 id="measuretext"><a name="user-content-measuretext" href="#measuretext" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>measureText() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>measureText() 方法返回包含一个对象，该对象包含以像素计的指定字体宽度。<br />
+提示：如果您需要在文本向画布输出之前，就了解文本的宽度，那么请使用该方法。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认值：</td>
+<td>0</td>
+</tr>
+<tr>
+<td>JavaScript 语法：</td>
+<td>context.shadowOffsetY=number;</td>
+</tr>
+</tbody>
+</table>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>正值或负值，定义阴影与形状的垂直距离</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.font=&quot;30px Arial&quot;;
+var txt=&quot;Hello World&quot;
+ctx.fillText(&quot;width:&quot; + ctx.measureText(txt).width,10,50)
+ctx.fillText(txt,10,100);
+
+
+</code></pre></article>

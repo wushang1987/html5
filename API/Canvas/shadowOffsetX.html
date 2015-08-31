@@ -1,0 +1,48 @@
+<article class="markdown-body"><h1 id="shadowoffsetx"><a name="user-content-shadowoffsetx" href="#shadowoffsetx" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>shadowOffsetX</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>shadowOffsetX 属性设置或返回形状与阴影的水平距离。<br />
+shadowOffsetX=0 指示阴影位于形状的正下方。<br />
+shadowOffsetX=20 指示阴影位于形状 left 位置右侧的 20 像素处。<br />
+shadowOffsetX=-20 指示阴影位于形状 left 位置左侧的 20 像素处。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认值：</td>
+<td>0</td>
+</tr>
+<tr>
+<td>JavaScript 语法：</td>
+<td>context.shadowOffsetX=number;</td>
+</tr>
+</tbody>
+</table>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>正值或负值，定义阴影与形状的水平距离。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.shadowBlur=10;
+ctx.shadowOffsetX=20;
+ctx.shadowColor=&quot;black&quot;;
+ctx.fillStyle=&quot;blue&quot;;
+ctx.fillRect(20,20,100,80);
+
+</code></pre></article>

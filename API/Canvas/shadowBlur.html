@@ -1,0 +1,44 @@
+<article class="markdown-body"><h1 id="shadowblur"><a name="user-content-shadowblur" href="#shadowblur" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>shadowBlur</h1>
+<p>shadowBlur 属性设置或返回阴影的模糊级数。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认值：</td>
+<td>#000000</td>
+</tr>
+<tr>
+<td>JavaScript 语法：</td>
+<td>context.shadowBlur=number;</td>
+</tr>
+</tbody>
+</table>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>阴影的模糊级数</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.shadowBlur=20;
+ctx.shadowColor=&quot;black&quot;;
+ctx.fillStyle=&quot;blue&quot;;
+ctx.fillRect(20,20,100,80); 
+
+</code></pre></article>

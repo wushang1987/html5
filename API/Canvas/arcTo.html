@@ -1,0 +1,47 @@
+<article class="markdown-body"><h1 id="arcto"><a name="user-content-arcto" href="#arcto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>arcTo() 方法</h1>
+<p>定义和用法<br />
+arcTo() 方法在画布上创建介于两个切线之间的弧/曲线。<br />
+提示：请使用 stroke() 方法在画布上绘制确切的弧。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x1</td>
+<td>弧的起点的 x 坐标</td>
+</tr>
+<tr>
+<td>y1</td>
+<td>弧的起点的 y 坐标</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>弧的终点的 x 坐标</td>
+</tr>
+<tr>
+<td>y2</td>
+<td>弧的终点的 y 坐标</td>
+</tr>
+<tr>
+<td>r</td>
+<td>弧的半径</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.beginPath();
+ctx.moveTo(20,20);           // 创建开始点
+ctx.lineTo(100,20);          // 创建水平线
+ctx.arcTo(150,20,150,70,50); // 创建弧
+ctx.lineTo(150,120);         // 创建垂直线
+ctx.stroke();                // 进行绘制
+
+
+</code></pre></article>

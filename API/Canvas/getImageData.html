@@ -1,0 +1,50 @@
+<article class="markdown-body"><h1 id="getimagedata"><a name="user-content-getimagedata" href="#getimagedata" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>getImageData() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>getImageData() 方法返回 ImageData 对象，该对象拷贝了画布指定矩形的像素数据。<br />
+对于 ImageData 对象中的每个像素，都存在着四方面的信息，即 RGBA 值：<br />
+R - 红色 (0-255)<br />
+G - 绿色 (0-255)<br />
+B - 蓝色 (0-255)<br />
+A - alpha 通道 (0-255; 0 是透明的，255 是完全可见的)<br />
+color/alpha 以数组形式存在，并存储于 ImageData 对象的 data 属性中。<br />
+提示：在操作完成数组中的 color/alpha 信息之后，您可以使用 putImageData() 方法将图像数据拷贝回画布上。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>开始复制的左上角位置的 x 坐标。</td>
+</tr>
+<tr>
+<td>y</td>
+<td>开始复制的左上角位置的 y 坐标。</td>
+</tr>
+<tr>
+<td>width</td>
+<td>将要复制的矩形区域的宽度。</td>
+</tr>
+<tr>
+<td>height</td>
+<td>将要复制的矩形区域的高度。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.fillStyle=&quot;red&quot;;
+ctx.fillRect(10,10,50,50);
+
+function copy()
+{
+var imgData=ctx.getImageData(10,10,50,50);
+ctx.putImageData(imgData,10,70);
+}
+
+
+</code></pre></article>

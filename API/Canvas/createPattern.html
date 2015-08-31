@@ -1,0 +1,47 @@
+<article class="markdown-body"><h1 id="createpattern"><a name="user-content-createpattern" href="#createpattern" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>createPattern() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>createPattern() 方法在指定的方向内重复指定的元素。<br />
+元素可以是图片、视频，或者其他 元素。<br />
+被重复的元素可用于绘制/填充矩形、圆形或线条等等。</p>
+<p>参数值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image</td>
+<td>规定要使用的图片、画布或视频元素。</td>
+</tr>
+<tr>
+<td>repeat</td>
+<td>默认。该模式在水平和垂直方向重复。</td>
+</tr>
+<tr>
+<td>repeat-x</td>
+<td>该模式只在水平方向重复。</td>
+</tr>
+<tr>
+<td>repeat-y</td>
+<td>该模式只在垂直方向重复。</td>
+</tr>
+<tr>
+<td>no-repeat</td>
+<td>该模式只显示一次（不重复）。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+var img=document.getElementById(&quot;lamp&quot;);
+var pat=ctx.createPattern(img,&quot;repeat&quot;);
+ctx.rect(0,0,150,100);
+ctx.fillStyle=pat;
+ctx.fill();
+
+
+</code></pre></article>

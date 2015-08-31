@@ -1,0 +1,31 @@
+<article class="markdown-body"><h1 id="globalalpha"><a name="user-content-globalalpha" href="#globalalpha" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>globalAlpha 属性</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>globalAlpha 属性设置或返回绘图的当前透明值（alpha 或 transparency）。<br />
+globalAlpha 属性值必须是介于 0.0（完全透明） 与 1.0（不透明） 之间的数字。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>透明值。必须介于 0.0（完全透明） 与 1.0（不透明） 之间。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.fillStyle=&quot;red&quot;;
+ctx.fillRect(20,20,75,50);
+// 调节透明度
+ctx.globalAlpha=0.2;
+ctx.fillStyle=&quot;blue&quot;;
+ctx.fillRect(50,50,75,50);
+ctx.fillStyle=&quot;green&quot;;
+ctx.fillRect(80,80,75,50);
+
+</code></pre></article>

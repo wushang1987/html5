@@ -1,0 +1,33 @@
+<article class="markdown-body"><h1 id="lineto"><a name="user-content-lineto" href="#lineto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>lineTo() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>lineTo() 方法添加一个新点，然后创建从该点到画布中最后指定点的线条（该方法并不会创建线条）。<br />
+提示：请使用 stroke() 方法在画布上绘制确切的路径。</p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>路径的目标位置的 x 坐标</td>
+</tr>
+<tr>
+<td>y</td>
+<td>路径的目标位置的 x 坐标</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(300,150);
+ctx.stroke();
+
+
+</code></pre></article>

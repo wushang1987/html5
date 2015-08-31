@@ -1,0 +1,52 @@
+<article class="markdown-body"><h1 id="arc"><a name="user-content-arc" href="#arc" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>arc() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>arc() 方法创建弧/曲线（用于创建圆或部分圆）。<br />
+提示：如需通过 arc() 来创建圆，请把起始角设置为 0，结束角设置为 2<em>Math.PI。<br />
+提示：请使用 stroke() 或 fill() 方法在画布上绘制实际的弧。<br />
+弧/曲线<br />
+中心：arc(100,75,50,0</em>Math.PI,1.5<em>Math.PI)<br />
+起始角：arc(100,75,50,0,1.5</em>Math.PI)<br />
+结束角：arc(100,75,50,0<em>Math.PI,1.5</em>Math.PI)</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>圆的中心的 x 坐标。</td>
+</tr>
+<tr>
+<td>y</td>
+<td>圆的中心的 y 坐标。</td>
+</tr>
+<tr>
+<td>r</td>
+<td>圆的半径。</td>
+</tr>
+<tr>
+<td>sAngle</td>
+<td>起始角，以弧度计。（弧的圆形的三点钟位置是 0 度）。</td>
+</tr>
+<tr>
+<td>eAngle</td>
+<td>结束角，以弧度计。</td>
+</tr>
+<tr>
+<td>counterclockwise</td>
+<td>可选。规定应该逆时针还是顺时针绘图。False = 顺时针，true = 逆时针。</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.arc(100,75,50,0,2*Math.PI);
+ctx.stroke();
+
+
+</code></pre></article>

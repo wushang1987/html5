@@ -1,0 +1,14 @@
+<article class="markdown-body"><h1 id="fill"><a name="user-content-fill" href="#fill" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>fill() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>fill() 方法填充当前的图像（路径）。默认颜色是黑色。<br />
+提示：请使用 fillStyle 属性来填充另一种颜色/渐变。<br />
+注释：如果路径未关闭，那么 fill() 方法会从路径结束点到开始点之间添加一条线，以关闭该路径，然后填充该路径。</p>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.rect(20,20,150,100);
+ctx.fillStyle=&quot;green&quot;;
+ctx.fill();
+
+
+</code></pre></article>

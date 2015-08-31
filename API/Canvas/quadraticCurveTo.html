@@ -1,0 +1,45 @@
+<article class="markdown-body"><h1 id="quadraticcurveto"><a name="user-content-quadraticcurveto" href="#quadraticcurveto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>quadraticCurveTo() 方法</h1>
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>定义和用法</h3>
+<p>quadraticCurveTo() 方法通过使用表示二次贝塞尔曲线的指定控制点，向当前路径添加一个点。<br />
+提示：二次贝塞尔曲线需要两个点。第一个点是用于二次贝塞尔计算中的控制点，第二个点是曲线的结束点。曲线的开始点是当前路径中最后一个点。如果路径不存在，那么请使用 beginPath() 和 moveTo() 方法来定义开始点。<br />
+二次贝塞尔曲线<br />
+开始点：moveTo(20,20)<br />
+控制点：quadraticCurveTo(20,100,200,20)<br />
+结束点：quadraticCurveTo(20,100,200,20)<br />
+提示：请查看 bezierCurveTo() 方法。它有两个控制点，而不是一个。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cpx</td>
+<td>贝塞尔控制点的 x 坐标</td>
+</tr>
+<tr>
+<td>cpy</td>
+<td>贝塞尔控制点的 y 坐标</td>
+</tr>
+<tr>
+<td>x</td>
+<td>结束点的 x 坐标</td>
+</tr>
+<tr>
+<td>y</td>
+<td>结束点的 y 坐标</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+var c=document.getElementById(&quot;myCanvas&quot;);
+var ctx=c.getContext(&quot;2d&quot;);
+ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.quadraticCurveTo(20,100,200,20);
+ctx.stroke();
+
+
+</code></pre></article>
